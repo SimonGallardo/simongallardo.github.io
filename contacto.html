@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Contacto - Parques Nacionales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="MiFuncion()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <img class="logo" src="PARQUESNACIONALES.png" alt="Parques">
+        <nav id="navegador" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="conservacion.html">Conservación</a></li>
+                <li><a href="videos.html">Videos documentales</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <section class="contact section-padding">
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center text-white pb-5">
+                            <h4>Ingresá tus datos para recibir información semanal</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-12 p-0 pt-4 pb-4">
+                        <form action="#" class="bg-dark p-4 m-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Correo">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Mensaje" rows="3"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="cajacontenedora">
+            <div class="caja">
+                <p>Parques Nacionales Argentina<br>Protegiendo la belleza natural y la biodiversidad para las futuras generaciones.</p>
+            </div>
+            <div class="caja">
+                <p>Correo electrónico: correo@parquesnacionales.com<br>Teléfono: +54 9 11 2382-8684<br>Dirección: Jeaun Jaures 932, CABA</p>
+            </div>
+            <div class="caja">
+                <p>Síguenos en Redes Sociales<br>@parquesnacionales</p>
+            </div>
+            <div class="caja">
+                <p>Aviso Legal<br>© 2024 Parques Nacionales Argentina. Todos los derechos reservados.<br>Política de Privacidad | Términos de Uso</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function MiFuncion() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += " mostrar";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>
