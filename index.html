@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques Nacionales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="PARQUESNACIONALES.png" alt="Parques" onclick="location.href='index.html'">
+        <a href="javascript:void(0);" class="icon" onclick="MiFuncion()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id="navegador">
+            <ul>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="conservacion.html">Conservación</a></li>
+                <li><a href="videos.html">Videos Documentales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>.</h1>
+        <h1>.</h1>
+        <h1>Parques Nacionales</h1>
+        <h3>Gestionamos las áreas protegidas más importantes del país como espacios de conservación del patrimonio natural y cultural, investigación, turismo sostenible y desarrollo local</h3>
+
+        <div class="cajacontenedora">
+            <div class="caja">
+                <h2>Parque Nacional Los Glaciares</h2>
+                <img class="Glaciares" src="glaciares.jpg" alt="Glaciar Perito Moreno en el Parque Nacional Los Glaciares">
+                <p>Ubicado en la provincia de Santa Cruz, Argentina, el Parque Nacional Los Glaciares abarca más de 2,800 km² de paisajes glaciares y montañosos.</p>
+            </div>
+            <div class="caja">
+                <h2>Parque Nacional Iguazú</h2>
+                <img class="Iguazú" src="iguazu.jpg" alt="Cataratas del Iguazú">
+                <p>Ubicado en la provincia de Misiones, Argentina, el Parque Nacional Iguazú es famoso por sus impresionantes cataratas.</p>
+            </div>
+        </div>
+        <div class="cajacontenedora">
+            <div class="caja">
+                <h2>Parque Nacional Nahuel Huapi</h2>
+                <img class="nahuelhuapi" src="nahuelhuapi.jpg" alt="Lago en el Parque Nacional Nahuel Huapi">
+                <p>Ubicado en las provincias de Neuquén y Río Negro, el Parque Nacional Nahuel Huapi abarca más de 7,000 km² de lagos, bosques y montañas. Este parque es esencial para la conservación de los bosques andinos-patagónicos.</p>
+            </div>
+            <div class="caja">
+                <h2>Parque Nacional Los Alerces</h2>
+                <img class="Patagonia" src="patagonia.jpg" alt="Bosque de Alerces en el Parque Nacional Los Alerces">
+                <p>El Parque Nacional Los Alerces, ubicado en la provincia de Chubut, Argentina, es famoso por su bosque de alerces, uno de los árboles más antiguos del planeta. Es crucial para la conservación de su biodiversidad.</p>
+            </div>
+        </div>
+
+        <div class="cajacontenedora">
+            <div class="caja">
+                <h2>Parque Nacional Talampaya</h2>
+                <img class="Talampaya" src="talampaya.jpg" alt="Formaciones geológicas en el Parque Nacional Talampaya">
+                <p>Ubicado en la provincia de La Rioja, Argentina, el Parque Nacional Talampaya es conocido por sus formaciones geológicas y su rica biodiversidad. Es un lugar ideal para el ecoturismo.</p>
+            </div>
+            <div class="caja">
+                <h2>Parque Nacional Quebrada de Humahuaca</h2>
+                <img class="Jujuy" src="jujuy.jpg" alt="Paisaje de la Quebrada de Humahuaca">
+                <p>Ubicado en la provincia de Jujuy, Argentina, el Parque Nacional Quebrada de Humahuaca abarca un paisaje espectacular de montañas y valles, famoso por su diversidad cultural y natural.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="cajacontenedora">
+            <div class="caja">
+                <p>Parques Nacionales Argentina: Protegiendo la belleza natural y la biodiversidad para las futuras generaciones.</p>
+            </div>
+            <div class="caja">
+                <p>Correo electrónico: correo@parquesnacionales.com<br>Teléfono: +54 9 11 2382-8684<br>Dirección: Jeaun Jaures 932, CABA</p>
+            </div>
+            <div class="caja">
+                <p>Síguenos en Redes Sociales<br>@parquesnacionales</p>
+            </div>
+            <div class="caja">
+                <p>Aviso Legal<br>© 2024 Parques Nacionales Argentina. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function MiFuncion() {
+            var x = document.getElementById("navegador");
+            x.classList.toggle("mostrar");
+        }
+    </script>
+</body>
+</html>
