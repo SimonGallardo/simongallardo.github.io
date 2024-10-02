@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Turismo - Parques Nacionales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="MiFuncion()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <img class="logo" src="PARQUESNACIONALES.png" alt="Parques">
+        <nav id="navegador" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="conservacion.html">Conservación</a></li>
+                <li><a href="videos.html">Videos documentales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Turismo</h1>
+        <div class="cajacontenedora">
+            <img class="turismo" src="turismo.jpg" alt="turismo">
+            <div>
+                <p>Respeta las Normas del Parque</p>
+                <p>Sigue las reglas: Cada parque nacional tiene regulaciones específicas para proteger sus ecosistemas...</p>
+                <p>Practica el Turismo Responsable</p>
+                <p>No dejes rastro: Lleva contigo toda la basura y no dejes objetos en el parque...</p>
+                <p>Cuida el Entorno Natural</p>
+                <p>Camina por senderos marcados: Mantente en los caminos y senderos designados...</p>
+                <p>Prepara tu Visita Adecuadamente</p>
+                <p>Infórmate sobre el parque: Conoce la geografía, la fauna, la flora y las reglas del parque antes de tu visita...</p>
+                <p>Sé Considerado con Otros Visitantes</p>
+                <p>Minimiza el ruido: Mantén el ruido al mínimo para no perturbar la tranquilidad del parque...</p>
+                <p>Contribuye a la Conservación</p>
+                <p>Participa en programas de voluntariado: Algunos parques ofrecen oportunidades para ayudar...</p>
+                <p>Educación y Sensibilización</p>
+                <p>Aprende sobre el parque: Lee y educa a otros sobre la importancia del parque...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="cajacontenedora">
+            <div class="caja">
+                <p>Parques Nacionales Argentina<br>Protegiendo la belleza natural y la biodiversidad para las futuras generaciones.</p>
+            </div>
+            <div class="caja">
+                <p>Correo electrónico: correo@parquesnacionales.com<br>Teléfono: +54 9 11 2382-8684<br>Dirección: Jeaun Jaures 932, CABA</p>
+            </div>
+            <div class="caja">
+                <p>Síguenos en Redes Sociales<br>@parquesnacionales</p>
+            </div>
+            <div class="caja">
+                <p>Aviso Legal<br>© 2024 Parques Nacionales Argentina. Todos los derechos reservados.<br>Política de Privacidad | Términos de Uso</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function MiFuncion() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += " mostrar";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>
