@@ -28,7 +28,7 @@ header {
 }
 
 .icon {
-  display: none; /* Ocultar por defecto */
+  display: none; 
 }
 
 nav {
@@ -60,11 +60,11 @@ nav ul li a:hover {
 }
 
 nav.mostrar {
-  display: block; /* Muestra el menú cuando se activa */
+  display: block; 
 }
 
 main {
-  margin-top: 100px; /* Espacio para la barra de navegación */
+  margin-top: 100px; 
   background-color: rgb(154, 255, 250);
   padding: 20px;
 }
@@ -87,50 +87,50 @@ main {
 }
 
 .caja img, .caja video {
-  max-width: 100%; /* Asegura que la imagen/video no exceda el contenedor */
-  height: auto; /* Mantiene la proporción de la imagen/video */
-  display: block; /* Asegura que el elemento sea un bloque y se centre */
-  margin: 0 auto; /* Centra el elemento horizontalmente */
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 @media (max-width: 1024px) {
   .caja {
-      width: calc(50% - 20px); /* Dos imágenes/videos por fila en tablet */
+      width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column; /* Cambia la dirección del header en móvil */
-    align-items: flex-start; /* Alinea los elementos al inicio */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
   .icon {
-    display: block; /* Mostrar el ícono de menú en móvil */
+    display: block; 
   }
 
   nav {
-    display: none; /* Oculta el menú por defecto */
-    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    display: none; 
+    width: 100%; 
   }
 
   nav.mostrar {
-    display: flex; /* Muestra el menú cuando se activa */
-    flex-direction: column; /* Muestra los elementos en columna */
-    padding: 10px 0; /* Espaciado interno para el menú */
+    display: flex; 
+    flex-direction: column; 
+    padding: 10px 0; 
   }
 
   nav ul {
-    flex-direction: column; /* Coloca los elementos en columna */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    flex-direction: column; 
+    width: 100%; 
   }
 
   nav ul li {
-    margin: 5px 0; /* Espaciado entre elementos en móvil */
+    margin: 5px 0; 
   }
 
   .caja {
-      width: calc(100% - 20px); /* Un imagen/video por fila en móvil */
+      width: calc(100% - 20px); 
   }
 }
 
@@ -203,8 +203,54 @@ input.form-control, textarea.form-control {
   margin-bottom: 20px; 
 }
 .conservacion {
-  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Asegura que la imagen sea un bloque */
-  margin: 20px auto; /* Centra la imagen con un margen superior e inferior */
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 20px auto; 
 }
+
+.cajapublicidad { background-color:blue; text-align: center; padding; 10px}
+.contenedoranuncio {display:block; margin: auto; width: 728px; height: 90px; background-color: #fff;}
+.cajaanuncio {display:flex;flex-flow: wrap; align-items: center; background-color: #f1f2f2;}
+.cajaanuncio img {height: 90px;}
+.cajaanuncio h1 {widht: 66%; font-size: 30 px; margin: 10px}
+.botonanuncio {display:inline-block; padding: 10px; border-radius: 10px; margin:10px; background-color: orangered; color: #fff text-decoration: nona;
+}
+.anuncio {width: 728px; height: 90px; background-color: #FFF}
+@media (8max-width:800px) {
+  .cajacontenedora div, .cajacontenedora div { width: 48%}
+  .contenedoranuncio { width: 300px; height: 250px;}
+}
+@media (max-width:480px){
+  .anuncio {width: 300px; height: 600px; background-color: #FFF}
+}
+.turismo {
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 600px) {
+  .turismo {
+      width: 100%; 
+      height: auto; 
+  }
+}
+.cajapublicidad {
+  background-color: blue; 
+  text-align: center; 
+  padding: 10px; 
+}
+
+.contenedoranuncio {
+  display: block; 
+  margin: auto; 
+}
+
+.anuncio {
+  background-color: #FFF;
+}
+
+@media (min-width: 728px) {
+  .contenedoranuncio {
+    width: 728px; 
+    height: 
