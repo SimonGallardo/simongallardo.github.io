@@ -30,7 +30,22 @@
 
     <main>
         <h1>Conservación</h1>
-        <img class="conservacion" src="conservacion.jpg" alt="Conservación">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img class="conservacion" src="conservacion.jpg" alt="Conservación">
+                </div>
+                <div class="slide">
+                    <img class="conservacion" src="conservacion1.jpg" alt="Conservación">
+                </div>
+                <div class="slide">
+                    <img class="conservacion" src="conservacion2.jpg" alt="Conservación">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
         <ul>
             <li>Monitoreo y Gestión de Recursos Naturales</li>
             <li>Educación y Sensibilización del Público</li>
@@ -63,6 +78,17 @@
     </footer>
 
     <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            const slidesContainer = document.querySelector('.slides');
+            slidesContainer.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+        }
+
+        setInterval(() => moveSlide(1), 5000);
+
         function MiFuncion() {
             var x = document.getElementById("navegador");
             x.classList.toggle("mostrar");
