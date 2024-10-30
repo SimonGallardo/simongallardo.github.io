@@ -28,30 +28,29 @@
 
     <main>
         <h1>Turismo</h1>
-<div class="cajacontenedora">
-    <a href="#modal1">
-        <img class="turismo" src="turismo.jpg" alt="turismo1">
-    </a>
-    <a href="#modal2">
-        <img class="turismo" src="turismo1.jpg" alt="turismo2">
-    </a>
-    <a href="#modal3">
-        <img class="turismo" src="turismo2.jpg" alt="turismo3">
-    </a>
-</div>
+        <div class="cajacontenedora">
+            <a href="#modal1">
+                <img class="turismo" src="turismo.jpg" alt="turismo1">
+            </a>
 
-<div class="modal" id="modal1">
-    <a href="#" class="cerrar">✖</a>
-    <img src="turismo.jpg" alt="turismo1 ampliado">
-</div>
-<div class="modal" id="modal2">
-    <a href="#" class="cerrar">✖</a>
-    <img src="turismo1.jpg" alt="turismo2 ampliado">
-</div>
-<div class="modal" id="modal3">
-    <a href="#" class="cerrar">✖</a>
-    <img src="turismo2.jpg" alt="turismo3 ampliado">
-</div>
+        </div>
+        
+        <div class="modal" id="modal1">
+            <a href="#" class="cerrar">✖</a>
+            <img src="turismo.jpg" alt="turismo ampliado">
+            <button class="navegar" data-target="#modal2">Siguiente</button>
+        </div>
+        <div class="modal" id="modal2">
+            <a href="#" class="cerrar">✖</a>
+            <img src="turismo1.jpg" alt="turismo1 ampliado">
+            <button class="navegar" data-target="#modal3">Siguiente</button>
+        </div>
+        <div class="modal" id="modal3">
+            <a href="#" class="cerrar">✖</a>
+            <img src="turismo2.jpg" alt="turismo2 ampliado">
+            <button class="navegar" data-target="#modal1">Anterior</button>
+        </div>
+        
             <div>
                 <p>Respeta las Normas del Parque</p>
                 <p>Sigue las reglas: Cada parque nacional tiene regulaciones específicas para proteger sus ecosistemas...</p>
@@ -89,14 +88,36 @@
     </footer>
 
     <script>
-        function MiFuncion() {
-            var x = document.getElementById("navegador");
-            if (x.className === "") {
-                x.className += " mostrar";
-            } else {
-                x.className = "";
-            }
-        }
+        document.querySelectorAll('.cerrar').forEach(cerrar => {
+            cerrar.onclick = () => {
+                cerrar.parentElement.style.display = 'none';
+            };
+        });
+
+        document.querySelectorAll('.turismo img').forEach(img => {
+            img.onclick = function() {
+                const modalId = this.parentNode.getAttribute('href');
+                document.querySelector(modalId).style.display = 'flex';
+            };
+        });
+
+        document.querySelectorAll('.navegar').forEach(button => {
+            button.onclick = function(event) {
+                event.stopPropagation(); 
+                const targetId = this.getAttribute('data-target');
+                document.querySelectorAll('.modal').forEach(modal => {
+                    modal.style.display = 'none';
+                });
+                document.querySelector(targetId).style.display = 'flex';
+            };
+        });
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.onclick = function() {
+                this.style.display = 'none';
+            };
+        });
     </script>
+    
 </body>
 </html>
