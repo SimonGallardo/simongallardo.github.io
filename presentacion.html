@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>{
+        margin: 0;
+        padding: 0;
+    }</style>   
+</head>
+<body>
+    
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img class="presentacion" src="presentacion1.jpg" alt="presentacion">
+                </div>
+                <div class="slide">
+                    <img class="presentacion" src="presentacion.jpg" alt="presentacion">
+                </div>
+                <div class="slide">
+                    <img class="presentacion" src="presentacion2.jpg" alt="presentacion">
+                </div>
+                <div class="slide">
+                    <img class="presentacion" src="presentacion3.jpg" alt="presentacion">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+
+       
+        <footer>
+            <div class="cajacontenedora">
+                <a href="https://simongallardo.github.io/index.html">Parques Nacionales Web</a>
+            </div>
+        </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            const slidesContainer = document.querySelector('.slides');
+            slidesContainer.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+        }
+
+
+        function MiFuncion() {
+            var x = document.getElementById("navegador");
+            x.classList.toggle("mostrar");
+        }
+    </script>
+    
+</body>
+</html>
